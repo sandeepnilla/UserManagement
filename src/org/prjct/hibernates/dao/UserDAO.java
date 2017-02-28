@@ -11,7 +11,9 @@ import org.hibernate.criterion.Restrictions;
 import org.prjct.hibernates.entity.User;
 import org.prjct.hibernates.utility.HibernateUtil;
  
- 
+ /*
+  * This file is for performing the required transactions on the database 
+  * */
 public class UserDAO {
      
     public String saveOrUpdateUser(User userObj){
@@ -25,7 +27,7 @@ public class UserDAO {
 			//Save the person in database
 			session.persist(userObj);
 			 
-			//Commit the transaction
+			//Commit the transaction ok
 			trans.commit();
 			session.close();
 		} catch (HibernateException e) {
