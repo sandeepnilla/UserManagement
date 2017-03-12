@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 import org.prjct.hibernates.dao.UserDAO;
 import org.prjct.hibernates.entity.User;
 
-
+/*dfbdfgbfd*/
 @Path("/userdetails")
 public class UserController {
 	@GET
