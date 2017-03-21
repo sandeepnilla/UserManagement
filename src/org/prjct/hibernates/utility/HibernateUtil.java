@@ -2,7 +2,9 @@ package org.prjct.hibernates.utility;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
- 
+ /*
+  * Hibernate session creation
+  * */
 public class HibernateUtil {
  
     private static final SessionFactory sessionFactory = buildSessionFactory();
