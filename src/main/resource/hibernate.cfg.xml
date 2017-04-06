@@ -35,6 +35,10 @@
 
 		<!-- Drop and re-create the database schema on startup -->
 		<property name="hbm2ddl.auto">update</property>
+		
+		<property name="hibernate.cache.provider_class">
+      	org.hibernate.cache.EhCacheProvider
+   		</property>
 
 		<mapping class="org.prjct.hibernates.entity.User" />
 		<!-- <mapping resource="User.hbm.xml"/> -->

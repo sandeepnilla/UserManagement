@@ -46,6 +46,7 @@ public class UserDAO {
           User userDtls = null;
     	try{
     	  cr.add(Restrictions.eq("lastName", userObj.getLastName()));
+    	  cr.setCacheable(true);
           List users = cr.list();
           for (Iterator iterator = 
         		  users.iterator(); iterator.hasNext();){
